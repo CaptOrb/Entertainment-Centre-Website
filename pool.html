@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wexford Bowl - Pool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+<body>
+<header>
+		<div id="logo" class="w3-left"><a href="index.html"><h3>Wexford Bowl</h3></div>
+
+	<div id="mobilemenu">
+		<i class="fas fa-bars w3-right" style="font-size:40px" onclick="w3_open()"></i>
+	</div>
+
+	<!-- Mobile Side Navigation Bar Start -->
+	<div class="w3-sidebar w3-bar-block w3-border-right w3-large w3-animate-right w3-dark-grey" id="mySidebar">
+		<button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button w3-hover-orange w3-border-bottom">Home</a>
+		<button class="w3-button w3-block w3-left-align w3-dark-grey w3-hover-red w3-border-bottom" onclick="openSubMenu('mobSubMenu')">
+			Activities <i class="fa fa-caret-down"></i>
+		</button>
+		
+		<div id="mobSubMenu" class="w3-hide w3-white w3-card">
+			<a href="bowling.html" class="w3-bar-item w3-button w3-border-bottom">Bowling</a>
+			<a href="pool.html" class="w3-bar-item w3-button w3-border-bottom">Pool</a>
+			<a href="lasertag.html" class="w3-bar-item w3-button w3-border-bottom">Laser Tag</a>
+		</div>
+		<a href="contact_us.html" class="w3-bar-item w3-button w3-hover-blue w3-border-bottom">Contact</a>
+	</div>
+	<!-- Mobile Side Navigation Bar End -->
+
+	<!-- Desktop Navigation Bar Start -->
+	<nav>
+		<ul>
+			<li><a href="index.html"><i class="fa fa-home home"></i> Home</a></li>
+			<li class="dropdown">
+			<a href="activities.html" class="dropbtn active"><i class="fas fa-gamepad"></i> Activities</a>
+			<div class="dropdown-content">
+			  <a href="bowling.html">Bowling</a>
+			  <a href="pool.html">Pool</a>
+			  <a href="lasertag.html">Laser Tag</a>
+			</div>
+			</li>
+			<li><a href="contact_us.html"><i class="fa fa-envelope"></i> Contact</a></li>
+	   </ul>
+	</nav>
+	<!-- Desktop Navigation Bar End -->
+</header>
+<div id="main">
+	<h2>Pool</h2>
+	
+	<div class="activitycontent">
+	
+	<p>If pool is your game then try out our retro themed pool hall.</p>
+	<p>We have 6 Riley pool tables (8ft) and 3 American pool tables to choose from. </p>	
+	<!-- Slideshow Start -->
+	<div class="slideshow w3-display-container">
+	 <img class="slideshowSlide serviceimage" src="Images/poolFirstSlide.jpg">
+	 <img class="slideshowSlide serviceimage" src="Images/pool.jpg">
+	 <img class="slideshowSlide serviceimage" src="Images/poolThirdSlide.jpg">
+
+
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+	</div>
+	<!-- Slideshow End -->
+
+	<div id="pricecontainer">
+	 <table class="w3-table w3-striped w3-border">
+		<tr class="w3-red">
+		  <th>Type</th>
+		  <th>Price</th>
+		</tr>
+		<tr>
+		  <td>8ft Pool</td>
+		  <td>&euro;10 Per Table</td>
+		</tr>
+		<tr>
+		  <td>American Pool</td>
+		  <td>&euro;13 Per Table</td>
+		</tr>
+		<tr>
+		  <td>3 Games</td>
+		  <td>&euro;10 Per Person</td>
+		</tr>
+	  </table>
+	
+	  </div>
+</div>
+<div id="testimonialcontainer">
+<h2>What our customers say</h2>
+<div class="testimonial w3-panel w3-card-4 w3-light-grey">
+    <p class=" w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+    Ideal place to hold a pool tournament with your friends. Shane Doe.</p>
+  </div>
+ <div class="testimonial w3-panel w3-card-4 w3-light-grey">
+    <p class=" w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+    Great way to spend an hour. James Reck.</p>
+  </div>
+</div>
+</div>
+
+<footer>
+	<a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+	<a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+	<a href="http://instragram.com"><i class="fab fa-instagram"></i></a>
+	<a href="tel:555-555-5555"><i class="fas fa-phone"></i></a>
+	<a href="mailto:help@wexfordbowl.ie"><i class="far fa-envelope"></i></a>
+
+	<p>&copy; Wexford Bowl 2019</p>
+</footer>
+</body>
+</html>
+<script src="scripts.js"></script>

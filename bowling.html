@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wexford Bowl - Bowling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+<body>
+<header>
+		<div id="logo" class="w3-left"><a href="index.html"><h3>Wexford Bowl</h3></div>
+
+	<div id="mobilemenu">
+		<i class="fas fa-bars w3-right" style="font-size:40px" onclick="w3_open()"></i>
+	</div>
+
+	<!-- Mobile Side Navigation Bar Start -->
+	<div class="w3-sidebar w3-bar-block w3-border-right w3-large w3-animate-right w3-dark-grey" id="mySidebar">
+		<button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+		<a href="index.html" class="w3-bar-item w3-button w3-hover-orange w3-border-bottom">Home</a>
+		<button class="w3-button w3-block w3-left-align w3-dark-grey w3-hover-red w3-border-bottom" onclick="openSubMenu('mobSubMenu')">
+			Activities <i class="fa fa-caret-down"></i>
+		</button>
+		
+		<div id="mobSubMenu" class="w3-hide w3-white w3-card">
+			<a href="bowling.html" class="w3-bar-item w3-button w3-border-bottom">Bowling</a>
+			<a href="pool.html" class="w3-bar-item w3-button w3-border-bottom">Pool</a>
+			<a href="lasertag.html" class="w3-bar-item w3-button w3-border-bottom">Laser Tag</a>
+		</div>
+		<a href="contact_us.html" class="w3-bar-item w3-button w3-hover-blue w3-border-bottom">Contact</a>
+	</div>
+	<!-- Mobile Side Navigation Bar End -->
+
+	<!-- Desktop Navigation Bar Start -->
+	<nav>
+		<ul>
+			<li><a href="index.html"><i class="fa fa-home home"></i> Home</a></li>
+			<li class="dropdown">
+			<a href="activities.html" class="dropbtn active"><i class="fas fa-gamepad"></i> Activities</a>
+			<div class="dropdown-content">
+			  <a href="bowling.html">Bowling</a>
+			  <a href="pool.html">Pool</a>
+			  <a href="lasertag.html">Laser Tag</a>
+			</div>
+			</li>
+			<li><a href="contact_us.html"><i class="fa fa-envelope"></i> Contact</a></li>
+	   </ul>
+	</nav>
+	<!-- Desktop Navigation Bar End -->
+</header>
+<div id="main">
+	<h2>Tenpin Bowling</h2>
+	
+	<div class="activitycontent">
+	
+	<p>Featuring 12 Bowling lanes and a state of the art Steltronic scoring system with 32" LCD monitors.</p>
+	<p>Wexford Bowl is the perfect place to hang out with friends or have a fun family day out!</p>
+	
+	<!-- Slideshow Start -->
+	<div class="slideshow w3-display-container">
+	 <img class="slideshowSlide serviceimage" src="Images/bowlFirstSlide.jpg" alt="BowlSlide1">
+	 <img class="slideshowSlide serviceimage" src="Images/bowlSecondSlide.jpg" alt="BowlSlide2">
+	 <img class="slideshowSlide serviceimage" src="Images/bowlThirdSlide.jpg" alt="BowlSlide3">
+
+
+	  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+	</div>
+	<!-- Slideshow End -->
+
+	<div id="pricecontainer">
+	 <table class="w3-table w3-striped w3-border">
+		<tr class="w3-red">
+		  <th>Number of Games</th>
+		  <th>Price</th>
+		</tr>
+		<tr>
+		  <td>1 Game</td>
+		  <td>&euro;6 Per Person</td>
+		</tr>
+		<tr>
+		  <td>2 Games</td>
+		  <td>&euro;8 Per Person</td>
+		</tr>
+		<tr>
+		  <td>3 Games</td>
+		  <td>&euro;9 Per Person</td>
+		</tr>
+	  </table>
+	  <p>Alternatively you can play by the hour</p>
+	<table class="w3-table w3-striped w3-border">
+		<tr class="w3-red">
+		  <th>Game Duration</th>
+		  <th>Price</th>
+		</tr>
+		<tr>
+		  <td>30 Mins</td>
+		  <td>&euro;20 Per Lane</td>
+		</tr>
+		<tr>
+		  <td>1 Hour</td>
+		  <td>&euro;35 Per Lane</td>
+		</tr>
+		<tr>
+		  <td>2 Hours</td>
+		  <td>&euro;55 Per Lane</td>
+		</tr>
+	  </table>
+	  <p>Please note there is a maximum of 6 people per lane</p>
+	  </div>
+</div>
+<h2>What our customers say</h2>
+<div class="testimonial w3-panel w3-card-4 w3-light-grey">
+    <p class=" w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+    Awesome Bowling Alley. <br> Good atmosphere. Nulla Facilisi.</p>
+  </div>
+<div class="testimonial w3-panel w3-card-4 w3-light-grey">
+    <p class=" w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+    Great activity to do with members of the family of all ages! David Williams.</p>
+  </div>
+</div>
+<footer>
+	<a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+	<a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+	<a href="http://instragram.com"><i class="fab fa-instagram"></i></a>
+	<a href="tel:555-555-5555"><i class="fas fa-phone"></i></a>
+	<a href="mailto:help@wexfordbowl.ie"><i class="far fa-envelope"></i></a>
+
+	<p>&copy; Wexford Bowl 2019</p>
+</footer>
+</body>
+</html>
+<script src="scripts.js"></script>

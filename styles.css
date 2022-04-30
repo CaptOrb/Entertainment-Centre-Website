@@ -1,0 +1,384 @@
+body, html{
+	height: 100%;
+}
+
+body{
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 0px;/* Turn off Browser Page Margins*/
+}
+
+header{
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: #505050;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#logo a{
+text-decoration: none;
+}
+#logo{
+  margin-bottom: 20px;
+  float: left;
+  width: 15%;
+  
+}
+
+nav{
+  width: 75%;
+  float: right;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li{
+  width: 30.33%;
+  float: left;
+  text-align: center;
+}
+
+nav ul li a:link{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:visited{
+	/*Do not change the font colour for a visited link*/
+  color: #fff;
+}
+
+nav ul li a:hover{
+  color: red;
+}
+nav li a.active {
+  /*Set a green background colour on the link that the user is currently on*/
+  background-color: #4CAF50;
+  color: white;
+}
+
+.dropbtn{
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav ul li .dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-content a:hover{
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+#main{
+  width: 90%;
+  border: 2px dotted #c9d4d1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+  min-height: 100%;
+  height: auto;
+  padding-bottom: 60px;
+}
+
+#main h1{
+  text-align: center;
+  color: #336666;
+}
+#main h2{
+	color: #336666;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#main h3{
+	margin-top: 15px;
+	color: #336666;
+	text-align: center;
+}
+
+.hero-image{
+	/* Use "linear-gradient" to add a darken background effect to the image This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("Images/BowlingImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ /*Resize the background image to cover the entire container*/
+  height: 85%;
+  position: relative;
+}
+
+.hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.home{
+  height: 100%;
+  font-size: 16px; /* Set a font size */
+}
+
+#seemorebutton{
+  background-color: #ff0000;
+  margin-top: 30px;
+  border: none; /*Remove the border around the button*/
+  padding: 15px 32px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 25px;
+}
+
+#mobilemenu{
+  display: none;
+}
+
+#mySidebar{
+  display: none;
+  width: 100%;
+  right: 0;
+}
+
+#cardcontainer{
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30.33%;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  padding-top: 10px;
+  height: 378px;
+}
+
+.card img{
+  width: 92%;
+  height: 200px;
+}
+
+.card button
+{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #808080;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover
+{
+  opacity: 0.7;
+}
+
+#cardcontainer .card h1{
+	color: red;
+}
+
+.serviceimage
+{
+	margin-right: 5px;
+	height: 330px;
+	width: 100%;
+}
+.activitycontent{
+	margin-top: 60px;
+}
+#main h3{
+	color: #336666;
+	text-align: center;
+	margin-bottom: 30px;
+}
+footer
+{
+  background-color: grey;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  clear: both;
+}
+
+footer i
+{
+  margin-left: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+footer p
+{
+  text-align: center;
+}
+input[type=text], select, textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  margin-top: 5px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.slideshowSlide {display:none;}
+
+.slideshow{
+	float: right;
+	margin-bottom: 30px;
+	width: 45%;
+}
+#pricecontainer{
+	width: 50%;
+}
+#testimonialcontainer{
+	clear: both;
+	margin-top: 50px;
+}
+.testimonial
+{
+	margin: auto;
+	width: 50%;
+	margin-bottom: 5px;
+}
+#map{
+	width: 60%;
+	float: right;
+    height: 400px;
+    background-color: grey;
+	margin-bottom: 50px;
+   }
+#contactus{
+	clear: both;
+	margin-top: 50px;
+	
+}
+a[href^="tel:"] , a[href^="mailto:"] {
+  color: blue;
+}
+#cardcontainer img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+} 
+@media screen and (max-width: 580px) ,(-webkit-min-device-pixel-ratio: 2) {
+  #logo
+  {
+    width: 70%;
+  }
+
+  nav ul
+  {
+    display: none;
+ /*Hide the Nav Bar*/
+    ;
+  }
+
+  #main
+  {
+    width: 98%;
+    min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+
+  #mobilemenu
+  {
+    display: block;
+    float: right;
+    width: 30%;
+    cursor: pointer;
+  }
+
+  .card
+  {
+    width: 100%;
+    margin-top: 25px;
+	margin-left: 3px;
+  }
+  .slideshow{
+	  width: 100%;
+  }
+  #pricecontainer{
+	width: 100%;
+}
+.serviceimage
+	{
+		width: 100%;
+		height: 250px;
+	}
+.testimonial{
+	width: 100%;
+	text-align: center;
+}
+.hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 46.9%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+footer i
+{
+	font-size:25px;
+}
+#map{
+	width: 100%;
+}
+ 
+  h2 { font-size: 22px !important; }
+}
