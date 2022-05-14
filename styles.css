@@ -16,8 +16,12 @@ header{
   padding-right: 10px;
 }
 
+header img{
+	height:50px;
+}
+
 #logo a{
-text-decoration: none;
+	text-decoration: none;
 }
 #logo{
   margin-bottom: 20px;
