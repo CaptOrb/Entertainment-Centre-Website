@@ -68,31 +68,34 @@
 	
 
 <div id="contactus">
-<h2>Alternatively, fill out this form</h2>
-	<label for="fname">First Name</label>
-		<input type="text" id="fname" name="firstname" placeholder="Your first name..">
 
-		<label for="lname">Last Name</label>
-		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	<form action = "">
+	<h2>Alternatively, fill out this form</h2>
+		<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
 
-		<label for="email">Your Email Address</label>
-		<input type="email" id="email" name="email" placeholder="Your email address">
-		<label for="email">Subject</label>
-		<select class="w3-select" name="option">
-	    <option value="" disabled selected>What can we help you with?</option>
-	    <option value="1">Bowling</option>
-	    <option value="2">Pool</option>
-	    <option value="3">Laser Tag</option>
-		<option value="4">School Tours</option>
-	    <option value="5">General Enquiry</option>
-</select> 
-<br><br>
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
-		<label for="query">Query</label>
-		<textarea id="query" name="query" placeholder="Your Query.." style="height:100px"></textarea>
+			<label for="email">Your Email Address</label>
+			<input type="email" id="email" name="email" placeholder="Your email address" required>
+			<label for="email">Subject</label>
+			<select class="w3-select" name="option">
+			<option value="" disabled selected>What can we help you with?</option>
+			<option value="1">Bowling</option>
+			<option value="2">Pool</option>
+			<option value="3">Laser Tag</option>
+			<option value="4">School Tours</option>
+			<option value="5">General Enquiry</option>
+	</select> 
+	<br><br>
 
-		<input type="submit" value="Submit">
-</div>
+			<label for="query">Query</label>
+			<textarea id="query" name="query" placeholder="Your Query.." required style="height:100px"></textarea>
+
+			<input type="submit" value="Submit">
+	</div>
+	</form>
 </div>
 
 <footer>
