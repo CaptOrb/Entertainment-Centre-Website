@@ -68,7 +68,7 @@
   <p><button onclick="window.location.href='pool.html'">More Info</button></p>
 </div>
 <div class="card">
-  <img src="Images/laserFirstSlide.jpg" alt="Laser Tag" class="w3-hover-sepia">
+  <img src="Images/laserFirstSlide.jpg.jpg" alt="Laser Tag" class="w3-hover-sepia">
   <h1>Laser Tag</h1>
   <p>Ready, aim, fire!</p>
   <p><button onclick="window.location.href='lasertag.html'">More Info</button></p>
